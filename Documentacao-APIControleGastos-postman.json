@@ -1,0 +1,1166 @@
+{
+	"info": {
+		"_postman_id": "47b659e3-9d1b-4086-aad1-c7fb3040293c",
+		"name": "APIControleGastos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28513174"
+	},
+	"item": [
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Obter Categoria",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Categoria/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Categoria",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Categoria/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Categoria",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"descricao\": \"string\",\n  \"finalidade\": 2,\n  \"id\": 1743\n}"
+								}
+							]
+						},
+						{
+							"name": "/Categoria/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"descricao\": \"string\",\n  \"finalidade\": 2,\n  \"id\": 1743\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Categoria/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Categoria",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"descricao\": \"string\",\n  \"finalidade\": 2,\n  \"id\": 1743\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Categoria/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Categoria",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/Categoria/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Categoria/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Categoria",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/Categoria/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Categoria",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Categoria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Categoria",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Categoria",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Categoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 1614\n  },\n  {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 7455\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "/Categoria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"descricao\": \"string\",\n  \"finalidade\": 2,\n  \"id\": 1743\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Categoria",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Categoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"descricao\": \"string\",\n  \"finalidade\": 2,\n  \"id\": 1743\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Categoria",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Categoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pessoa",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Obter Pessoa",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Pessoa/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Pessoa",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Pessoa/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Pessoa",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"idade\": 4696,\n  \"nome\": \"string\",\n  \"id\": 383,\n  \"deletado\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "/Pessoa/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idade\": 4696,\n  \"nome\": \"string\",\n  \"id\": 383,\n  \"deletado\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Pessoa/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Pessoa",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"idade\": 4696,\n  \"nome\": \"string\",\n  \"id\": 383,\n  \"deletado\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Pessoa/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Pessoa",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/Pessoa/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Pessoa/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Pessoa",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/Pessoa/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Pessoa",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Pessoa",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Pessoa",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Pessoa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Pessoa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Pessoa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"idade\": 9519,\n    \"nome\": \"string\",\n    \"id\": 2675,\n    \"deletado\": false\n  },\n  {\n    \"idade\": 2401,\n    \"nome\": \"string\",\n    \"id\": 3692,\n    \"deletado\": false\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "/Pessoa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"idade\": 4696,\n  \"nome\": \"string\",\n  \"id\": 383,\n  \"deletado\": true\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Pessoa",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Pessoa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idade\": 4696,\n  \"nome\": \"string\",\n  \"id\": 383,\n  \"deletado\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Pessoa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Pessoa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transacao",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Obter Transacao",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Transacao/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Transacao/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Transacao",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"tipo\": 2,\n  \"valor\": 3522.617880702321,\n  \"id\": 7362,\n  \"descricao\": \"string\",\n  \"pessoaId\": 8241,\n  \"pessoa\": {\n    \"idade\": 4314,\n    \"nome\": \"string\",\n    \"id\": 9500,\n    \"deletado\": true\n  },\n  \"categoriaId\": 4357,\n  \"categoria\": {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 8348\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/Transacao/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"tipo\": 2,\n  \"valor\": 3522.617880702321,\n  \"id\": 7362,\n  \"descricao\": \"string\",\n  \"pessoaId\": 8241,\n  \"pessoa\": {\n    \"idade\": 4314,\n    \"nome\": \"string\",\n    \"id\": 9500,\n    \"deletado\": true\n  },\n  \"categoriaId\": 4357,\n  \"categoria\": {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 8348\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Transacao/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"tipo\": 2,\n  \"valor\": 3522.617880702321,\n  \"id\": 7362,\n  \"descricao\": \"string\",\n  \"pessoaId\": 8241,\n  \"pessoa\": {\n    \"idade\": 4314,\n    \"nome\": \"string\",\n    \"id\": 9500,\n    \"deletado\": true\n  },\n  \"categoriaId\": 4357,\n  \"categoria\": {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 8348\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Transacao/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Transacao",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/Transacao/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Transacao/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8226"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/Transacao/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Transacao",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "8226"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "totais-pessoa",
+					"item": [
+						{
+							"name": "/Transacao/totais-pessoa",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Transacao/totais-pessoa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao",
+										"totais-pessoa"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Transacao/totais-pessoa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Transacao",
+												"totais-pessoa"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": 6513,\n    \"nome\": \"string\",\n    \"descricaoCategoria\": \"string\",\n    \"receita\": 8432.859120156018,\n    \"despesa\": 4951.331305176077,\n    \"pessoa\": {\n      \"idade\": 2028,\n      \"nome\": \"string\",\n      \"id\": 1576,\n      \"deletado\": true\n    },\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 1,\n      \"id\": 5203\n    }\n  },\n  {\n    \"id\": 6941,\n    \"nome\": \"string\",\n    \"descricaoCategoria\": \"string\",\n    \"receita\": 2540.3741751022358,\n    \"despesa\": 4580.283407128918,\n    \"pessoa\": {\n      \"idade\": 7939,\n      \"nome\": \"string\",\n      \"id\": 3743,\n      \"deletado\": false\n    },\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 2,\n      \"id\": 4295\n    }\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "totais-categoria",
+					"item": [
+						{
+							"name": "/Transacao/totais-categoria",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Transacao/totais-categoria",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao",
+										"totais-categoria"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Transacao/totais-categoria",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Transacao",
+												"totais-categoria"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": 6513,\n    \"nome\": \"string\",\n    \"descricaoCategoria\": \"string\",\n    \"receita\": 8432.859120156018,\n    \"despesa\": 4951.331305176077,\n    \"pessoa\": {\n      \"idade\": 2028,\n      \"nome\": \"string\",\n      \"id\": 1576,\n      \"deletado\": true\n    },\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 1,\n      \"id\": 5203\n    }\n  },\n  {\n    \"id\": 6941,\n    \"nome\": \"string\",\n    \"descricaoCategoria\": \"string\",\n    \"receita\": 2540.3741751022358,\n    \"despesa\": 4580.283407128918,\n    \"pessoa\": {\n      \"idade\": 7939,\n      \"nome\": \"string\",\n      \"id\": 3743,\n      \"deletado\": false\n    },\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 2,\n      \"id\": 4295\n    }\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Transacao",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Transacao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Transacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Transacao",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"tipo\": 1,\n    \"valor\": 5615.905719319587,\n    \"id\": 7341,\n    \"descricao\": \"string\",\n    \"pessoaId\": 1963,\n    \"pessoa\": {\n      \"idade\": 7598,\n      \"nome\": \"string\",\n      \"id\": 3065,\n      \"deletado\": true\n    },\n    \"categoriaId\": 7866,\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 2,\n      \"id\": 9514\n    }\n  },\n  {\n    \"tipo\": 1,\n    \"valor\": 3206.0598095949854,\n    \"id\": 4237,\n    \"descricao\": \"str\",\n    \"pessoaId\": 1715,\n    \"pessoa\": {\n      \"idade\": 6704,\n      \"nome\": \"string\",\n      \"id\": 6602,\n      \"deletado\": false\n    },\n    \"categoriaId\": 8096,\n    \"categoria\": {\n      \"descricao\": \"string\",\n      \"finalidade\": 2,\n      \"id\": 5285\n    }\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "/Transacao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tipo\": 2,\n  \"valor\": 3522.617880702321,\n  \"id\": 7362,\n  \"descricao\": \"string\",\n  \"pessoaId\": 8241,\n  \"pessoa\": {\n    \"idade\": 4314,\n    \"nome\": \"string\",\n    \"id\": 9500,\n    \"deletado\": true\n  },\n  \"categoriaId\": 4357,\n  \"categoria\": {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 8348\n  }\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Transacao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Transacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"tipo\": 2,\n  \"valor\": 3522.617880702321,\n  \"id\": 7362,\n  \"descricao\": \"string\",\n  \"pessoaId\": 8241,\n  \"pessoa\": {\n    \"idade\": 4314,\n    \"nome\": \"string\",\n    \"id\": 9500,\n    \"deletado\": true\n  },\n  \"categoriaId\": 4357,\n  \"categoria\": {\n    \"descricao\": \"string\",\n    \"finalidade\": 2,\n    \"id\": 8348\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Transacao",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Transacao"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
